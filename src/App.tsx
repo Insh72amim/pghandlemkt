@@ -1,6 +1,10 @@
 import type { ReactNode } from "react";
 
-const APP_URL = "https://app.pghandle.com";
+import LogoFull from "./assets/logo.svg";
+import LogoMark from "./assets/logo-icon.svg";
+import ArrowIcon from "./assets/icon-arrow-down.svg";
+
+const APP_URL = "https://app.pghandle.in";
 const DEMO_URL = "https://cal.com/pghandle/demo";
 
 const navLinks = [
@@ -121,7 +125,7 @@ const pgShowcase = [
     copy: "100% occupancy waitlist maintained via PGHandle guest funnels, with automated meal plans and biometric access syncing nightly.",
     metric: "Avg. ₹38K monthly beds",
     tag: "Premium PG",
-    cta: "View playbook →",
+    cta: "View playbook",
   },
   {
     title: "Co-Live Collective — Hyderabad",
@@ -131,7 +135,7 @@ const pgShowcase = [
     copy: "Hybrid PG + managed apartments powered by PGHandle automation for dining slots, utility billing, and WhatsApp concierge.",
     metric: "₹1.2Cr monthly revenue",
     tag: "Hybrid living",
-    cta: "See automations →",
+    cta: "See automations",
   },
   {
     title: "UrbanNest PG — Pune",
@@ -141,7 +145,7 @@ const pgShowcase = [
     copy: "Personalised move-in journeys and safety audits triggered through PGHandle workflows keep parents confident and reviews glowing.",
     metric: "4.95★ average rating",
     tag: "Women-first",
-    cta: "Explore journey →",
+    cta: "Explore journey",
   },
 ];
 
@@ -214,9 +218,22 @@ function App() {
     <div className="min-h-screen bg-gradient-to-b from-whiter via-white to-whiten text-body">
       <div className="border-b border-stroke/60 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-6">
-          <div className="font-display text-2xl font-semibold text-black">
-            PGHandle
-          </div>
+          <a href="/" className="flex items-center gap-3 text-black">
+            <img
+              src={LogoMark}
+              alt="PGHandle logomark"
+              className="h-10 w-10 lg:hidden"
+            />
+            <img
+              src={LogoFull}
+              alt="PGHandle logotype"
+              className="hidden h-12 w-auto lg:block"
+            />
+            <span className="font-display text-2xl font-semibold lg:hidden">
+              PGHandle
+            </span>
+            <span className="sr-only">PGHandle</span>
+          </a>
           <nav className="hidden gap-8 text-sm text-body md:flex">
             {navLinks.map((link) => (
               <a
@@ -271,7 +288,13 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center rounded-full border border-stroke bg-white px-7 py-3 font-semibold text-primary transition hover:border-primary hover:text-primary/80">
-                  See live demo
+                  <span>See live demo</span>
+                  <img
+                    src={ArrowIcon}
+                    alt=""
+                    aria-hidden="true"
+                    className="ml-3 h-4 w-4 -rotate-90"
+                  />
                 </a>
               </div>
               <div className="mt-10 grid grid-cols-2 gap-6 text-sm text-body md:flex md:gap-12">
@@ -409,7 +432,15 @@ function App() {
                     <span className="font-semibold text-black">
                       {space.metric}
                     </span>
-                    <span className="text-primary">{space.cta}</span>
+                    <span className="inline-flex items-center gap-2 text-primary">
+                      {space.cta}
+                      <img
+                        src={ArrowIcon}
+                        alt=""
+                        aria-hidden="true"
+                        className="h-4 w-4 -rotate-90"
+                      />
+                    </span>
                   </div>
                 </div>
               </article>
