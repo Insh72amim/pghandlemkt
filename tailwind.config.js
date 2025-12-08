@@ -4,16 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#3C50E0",
-        secondary: "#80CAEE",
+        primary: "#2563EB", // Professional blue
+        secondary: "#10B981", // Success green
         body: "#64748B",
-        bodydark: "#AEB7C0",
+        bodydark: "#94A3B8",
         stroke: "#E2E8F0",
-        gray: "#EFF4FB",
-        "gray-2": "#F7F9FC",
-        black: "#1C2434",
-        whiten: "#F1F5F9",
-        whiter: "#F5F7FD",
+        gray: "#F1F5F9",
+        "gray-2": "#F8FAFC",
+        black: "#0F172A",
+        whiten: "#F8FAFC",
+        whiter: "#FFFFFF",
       },
       fontFamily: {
         sans: ["Satoshi", "Inter", "system-ui", "sans-serif"],
@@ -21,7 +21,7 @@ export default {
       },
       backgroundImage: {
         "soft-grid":
-          "radial-gradient(circle at 1px 1px, rgba(60,80,224,0.08) 1px, transparent 0)",
+          "radial-gradient(circle at 1px 1px, rgba(37,99,235,0.08) 1px, transparent 0)",
       },
       boxShadow: {
         card: "0px 20px 45px rgba(15, 23, 42, 0.08)",

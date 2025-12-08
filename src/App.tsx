@@ -8,62 +8,62 @@ const APP_URL = "https://app.pghandle.in";
 const DEMO_URL = "https://cal.com/pghandle/demo";
 
 const navLinks = [
-  { label: "Platform", href: "#platform" },
-  { label: "Automation", href: "#automation" },
-  { label: "PG Gallery", href: "#gallery" },
+  { label: "Features", href: "#features" },
+  { label: "Services", href: "#services" },
+  { label: "Success Stories", href: "#showcase" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQs", href: "#faq" },
 ];
 
 const metrics = [
-  { label: "Nightly revenue uplift", value: "+18%" },
-  { label: "Hours saved / week", value: "14h" },
-  { label: "Guest CSAT", value: "4.9 / 5" },
-  { label: "Stay brands onboarded", value: "120+" },
+  { label: "PG Facilities Managed", value: "150+" },
+  { label: "Hours Saved Weekly", value: "20h" },
+  { label: "Owner Satisfaction", value: "4.8/5" },
+  { label: "Average Occupancy", value: "94%" },
 ];
 
 const heroImages = [
   {
-    src: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
-    caption: "Premium PG suites — Indiranagar",
+    src: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80",
+    caption: "Modern PG Management — Indiranagar",
   },
   {
-    src: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80",
-    caption: "Co-living social hub — HSR Layout",
+    src: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80",
+    caption: "Smart Facility Operations — HSR Layout",
   },
 ];
 
 const features = [
   {
-    title: "Unified stay command center",
-    copy: "Manage inventory, rates, owner payouts, and compliance from a single, opinionated workspace built for boutique stay operators.",
+    title: "Complete Bed & Room Management",
+    copy: "Manage bed bookings, room allocation, check-ins and check-outs seamlessly. Prevent booking conflicts with real-time availability tracking across all your PG properties.",
   },
   {
-    title: "AI guest concierge",
-    copy: "Automated itineraries, proactive upsells, and instant answers across WhatsApp, SMS, and email keep guests delighted without extra headcount.",
+    title: "Automated Billing & GST Compliance",
+    copy: "Generate rent invoices automatically, collect GST, track payments, and send automated reminders via SMS and WhatsApp. Stay compliant with zero manual effort.",
   },
   {
-    title: "Operations autopilot",
-    copy: "Smart tasks sync with housekeeping, maintenance, and vendor SLAs so teams know exactly what wins the day.",
+    title: "Food & Expense Management",
+    copy: "Track daily meal counts, manage food registers, and calculate per-plate costs. Control expenses and reduce wastage with smart inventory tracking.",
   },
   {
-    title: "Owner trust toolkit",
-    copy: "Transparent revenue splits, branded statements, and payout tracking keep owners feeling plugged in from day one.",
+    title: "Tenant & Owner Portal",
+    copy: "Give tenants self-service access to bills, maintenance requests, and notices. Keep property owners updated with automated monthly statements and profit/loss reports.",
   },
 ];
 
-const timeline = [
+const services = [
   {
-    title: "Signal",
-    body: "Connect OTAs, direct bookings, payments, and IoT signals into the PGHandle data lake in <10 minutes.",
+    title: "Bookings",
+    body: "Take bed bookings for future check-ins and avoid check-in conflicts. Manage waitlists and advance booking requests with ease.",
   },
   {
-    title: "Decide",
-    body: "The intelligence layer predicts occupancy risk, rate opportunities, and churn signals before they hurt revenue.",
+    title: "Issue Management",
+    body: "Track and resolve tenant issues promptly. Manage maintenance requests, complaints, and facility problems to keep everyone happy.",
   },
   {
-    title: "Act",
-    body: "Autonomous playbooks push updates to pricing, messaging, and workforce tools so execution is never manual.",
+    title: "Aadhaar KYC",
+    body: "Perform Aadhaar-based KYC verification to validate tenant identity. Maintain secure digital records of all tenant documentation.",
   },
 ];
 
@@ -78,39 +78,44 @@ type PricingPlan = {
 
 const pricingPlans: PricingPlan[] = [
   {
-    name: "Launch",
-    price: "₹12,499/mo",
-    caption: "Up to 25 keys • All channels • excl. GST",
+    name: "Starter",
+    price: "₹3,600/year",
+    caption: "1 PG Facility • Up to 50 beds • excl. GST",
     features: [
-      "Core PMS + channel sync",
-      "Digital guidebooks & upsells",
-      "Automated owner statements",
-      "Unlimited support during onboarding",
+      "Complete bed & room management",
+      "Automated billing & rent collection",
+      "SMS & WhatsApp notifications",
+      "Tenant & owner portals",
+      "Email & chat support",
     ],
     cta: "Start free trial",
   },
   {
-    name: "Growth",
-    price: "₹32,999/mo",
-    caption: "26-150 keys • Scale ready • excl. GST",
+    name: "Professional",
+    price: "₹8,999/year",
+    caption: "Up to 3 PG facilities • 150 beds • excl. GST",
     badge: "Most popular",
     features: [
-      "AI concierge + WhatsApp automation",
-      "Workflow builder for ops teams",
-      "Revenue intelligence & pacing alerts",
-      "Quarterly owner health reviews",
+      "Everything in Starter",
+      "Food register & expense tracking",
+      "Issue management system",
+      "GST invoicing & compliance",
+      "Aadhaar KYC verification",
+      "Priority support",
     ],
     cta: "Book live demo",
   },
   {
     name: "Enterprise",
-    price: "Custom INR",
-    caption: "150+ keys • Multi-market • custom SLA",
+    price: "Custom pricing",
+    caption: "Unlimited facilities • Custom solutions",
     features: [
-      "Dedicated CSM & success pods",
-      "Advanced API + custom data warehouse",
-      "Preferred partner marketplace rates",
-      "White-glove migration from legacy PMS",
+      "Everything in Professional",
+      "Multi-location management",
+      "Custom integrations & APIs",
+      "Dedicated account manager",
+      "Advanced analytics & reports",
+      "24/7 priority support",
     ],
     cta: "Talk to sales",
   },
@@ -118,72 +123,84 @@ const pricingPlans: PricingPlan[] = [
 
 const pgShowcase = [
   {
-    title: "PGHandle Prime — Bengaluru",
-    location: "12-storey smart PG near Indiranagar Metro",
+    title: "Green Valley PG — Bengaluru",
+    location: "3 facilities • 120 beds near Koramangala",
     image:
-      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=1200&q=80",
-    copy: "100% occupancy waitlist maintained via PGHandle guest funnels, with automated meal plans and biometric access syncing nightly.",
-    metric: "Avg. ₹38K monthly beds",
-    tag: "Premium PG",
-    cta: "View playbook",
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80",
+    copy: "Moved from Excel sheets to PGHandle. Now managing bookings, food counts, and billing for 3 properties from a single dashboard. Reduced manual work by 15 hours weekly.",
+    metric: "98% occupancy rate",
+    tag: "Multi-property",
+    cta: "Read success story",
   },
   {
-    title: "Co-Live Collective — Hyderabad",
-    location: "4 blocks • 280 beds near HITEC City",
+    title: "Student Hub PG — Hyderabad",
+    location: "2 buildings • 85 beds near HITEC City",
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
-    copy: "Hybrid PG + managed apartments powered by PGHandle automation for dining slots, utility billing, and WhatsApp concierge.",
-    metric: "₹1.2Cr monthly revenue",
-    tag: "Hybrid living",
-    cta: "See automations",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+    copy: "Automated rent reminders via WhatsApp reduced payment delays by 80%. GST compliance and invoicing now takes minutes instead of hours each month.",
+    metric: "₹4.2L monthly revenue",
+    tag: "Student Housing",
+    cta: "See how they did it",
   },
   {
-    title: "UrbanNest PG — Pune",
-    location: "Boutique women-focused PG at Koregaon Park",
+    title: "SafeStay Women's PG — Pune",
+    location: "Premium women's PG at Koregaon Park",
     image:
-      "https://images.unsplash.com/photo-1469796466635-455ede028aca?auto=format&fit=crop&w=1200&q=80",
-    copy: "Personalised move-in journeys and safety audits triggered through PGHandle workflows keep parents confident and reviews glowing.",
-    metric: "4.95★ average rating",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80",
+    copy: "Digital KYC verification and issue tracking system improved safety and tenant satisfaction. Parents receive monthly updates automatically, building trust and referrals.",
+    metric: "4.9★ tenant rating",
     tag: "Women-first",
-    cta: "Explore journey",
+    cta: "View case study",
   },
 ];
 
 const faqs = [
   {
-    question: "How fast can we go live?",
+    question: "How quickly can I start using PGHandle?",
     answer:
-      "Most stay brands launch within 10 business days. Our migration specialists import reservations, owners, taxes, and automations so your team stays focused on guests.",
+      "Most PG owners go live within 2-3 days. We help you import your existing tenant data, room details, and rent structure. Our team provides hands-on onboarding support to get you started smoothly.",
   },
   {
-    question: "Does PGHandle replace my current PMS?",
+    question: "Do I need technical knowledge to use PGHandle?",
     answer:
-      "Yes. PGHandle consolidates PMS, task management, owner portals, and guest comms. We integrate with your existing booking channels, accounting stack, and smart locks.",
+      "Not at all! PGHandle is designed for PG owners, not tech experts. If you can use WhatsApp, you can use PGHandle. We provide video tutorials and chat support whenever you need help.",
   },
   {
-    question: "Can I route guests directly into the PGHandle app?",
+    question: "Can tenants access their bills and make payments online?",
     answer:
-      "Marketing CTAs on this page deep-link into the PGHandle experience, so prospects jump straight into the app or booking flow you configure.",
+      "Yes. Each tenant gets a personal login to view bills, payment history, raise maintenance issues, and make online payments. This reduces your workload and improves tenant satisfaction.",
   },
   {
-    question: "Is there a free trial?",
+    question: "Is my data secure and backed up?",
     answer:
-      "Every plan starts with a 14-day pilot in a sandbox environment with live data. No credit card required.",
+      "Absolutely. All your data is stored securely in the cloud with automatic daily backups. Your PG data is encrypted and protected with bank-grade security. You'll never lose data even if your computer crashes.",
+  },
+  {
+    question: "What if I manage multiple PG properties?",
+    answer:
+      "Perfect! PGHandle is built for multi-property management. You can manage all your PG facilities from a single dashboard, with consolidated reports and individual property tracking.",
   },
 ];
 
-const logos = ["Hostfully", "Airbnb", "Stripe", "Zapier", "WhatsApp", "Google"];
+const logos = [
+  "WhatsApp",
+  "Razorpay",
+  "Paytm",
+  "Google Pay",
+  "PhonePe",
+  "UIDAI Aadhaar",
+];
 
 const testimonials = [
   {
     quote:
-      "PGHandle removed a full day of manual reconciliation from my week. Owners stopped asking for spreadsheets because everything updates in real time.",
-    author: "Priya S, Founder — Verve Stays",
+      "I was managing everything in notebooks and Excel. PGHandle saved me so much time! Now billing happens automatically, and I get instant notifications when someone pays. My tenants love the WhatsApp reminders too.",
+    author: "Rajesh Kumar, Owner — Green Park PG, Bengaluru",
   },
   {
     quote:
-      "We went from five disconnected tools to one dashboard that actually nudges us when revenue leaks. The AI concierge even drives 23% of ancillary sales.",
-    author: "Marcus W, COO — UrbanHost",
+      "Managing 4 PG properties was becoming overwhelming. PGHandle brought everything into one place. Food register, attendance, billing, maintenance requests - all organized. Highly recommend for any serious PG owner.",
+    author: "Meena Sharma, Founder — SafeNest PG Chain, Pune",
   },
 ];
 
@@ -267,28 +284,29 @@ function App() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-secondary">
-                Stay orchestration OS
+                PG Management Made Simple
               </p>
               <h1 className="mt-6 font-display text-5xl font-semibold leading-tight text-black md:text-6xl">
-                Automate every stay, wow every guest, and grow owner trust.
+                Ditch the notebooks. Manage your PG like a pro.
               </h1>
               <p className="mt-6 text-lg text-body">
-                PGHandle is the single control room for boutique stay brands.
-                Replace the patchwork of PMS, spreadsheets, and chat apps with
-                guided workflows that turn every team into hospitality heroes.
+                PGHandle is India's most powerful PG and hostel management
+                software. Automate bookings, billing, food management, and
+                tenant communication from one beautiful dashboard. Join 150+ PG
+                owners who've gone digital.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href={APP_URL}
                   className="inline-flex items-center rounded-full bg-primary px-7 py-3 font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5">
-                  Launch PGHandle
+                  Start Free Trial
                 </a>
                 <a
                   href={DEMO_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center rounded-full border border-stroke bg-white px-7 py-3 font-semibold text-primary transition hover:border-primary hover:text-primary/80">
-                  <span>See live demo</span>
+                  <span>Book a Demo</span>
                   <img
                     src={ArrowIcon}
                     alt=""
@@ -300,15 +318,15 @@ function App() {
               <div className="mt-10 grid grid-cols-2 gap-6 text-sm text-body md:flex md:gap-12">
                 <div>
                   <span className="block text-3xl font-semibold text-black">
-                    98%
+                    ₹300
                   </span>
-                  <p>Satisfied guests during pilot</p>
+                  <p>Per month (₹3,600/year)</p>
                 </div>
                 <div>
                   <span className="block text-3xl font-semibold text-black">
-                    14
+                    2-3
                   </span>
-                  <p>Days to value with guided onboarding</p>
+                  <p>Days to go live & start saving time</p>
                 </div>
               </div>
             </div>
@@ -316,10 +334,10 @@ function App() {
               <div className="absolute inset-0 -z-10 rounded-[32px] bg-gradient-to-br from-primary/15 via-white to-secondary/20 blur-3xl" />
               <div className="rounded-[32px] border border-stroke bg-white p-8 shadow-card">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-secondary">
-                  Live control tower
+                  Your PG Dashboard
                 </p>
                 <h3 className="mt-3 text-2xl font-semibold text-black">
-                  Tonight&apos;s Pulse
+                  Real-time Overview
                 </h3>
                 <div className="mt-6 grid gap-4 md:grid-cols-2">
                   {metrics.map((metric) => (
@@ -333,20 +351,20 @@ function App() {
                 </div>
                 <div className="mt-6 rounded-2xl border border-stroke bg-gray p-4">
                   <p className="text-sm font-medium text-black">
-                    Playbooks queued
+                    Today's Tasks
                   </p>
                   <div className="mt-3 space-y-3 text-sm">
                     <div className="flex items-center justify-between">
-                      <span>Raise rates for waterfront lofts</span>
-                      <span className="text-primary">+12%</span>
+                      <span>Send rent reminders (WhatsApp)</span>
+                      <span className="text-primary">12 tenants</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span>Trigger housekeeping sprint</span>
-                      <span className="text-primary">8 units</span>
+                      <span>Process pending check-ins</span>
+                      <span className="text-primary">3 bookings</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span>Send VIP upsell packs</span>
-                      <span className="text-primary">17 guests</span>
+                      <span>Resolve maintenance issues</span>
+                      <span className="text-primary">5 requests</span>
                     </div>
                   </div>
                 </div>
@@ -383,8 +401,8 @@ function App() {
       <section id="features" className="mx-auto max-w-6xl px-6 py-20">
         <SectionTitle
           eyebrow="Features"
-          title="Everything you need to make every stay legendary"
-          copy="From first inquiry to final payout, PGHandle keeps teams aligned on the plays that move revenue, reviews, and owner happiness forward."
+          title="Everything you need to manage your PG effortlessly"
+          copy="From tenant onboarding to monthly billing, PGHandle automates the tedious work so you can focus on providing great living experiences."
         />
         <div className="grid gap-6 md:grid-cols-2">
           {features.map((feature) => (
@@ -403,9 +421,9 @@ function App() {
         className="bg-gradient-to-b from-gray via-whiten to-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionTitle
-            eyebrow="PG showcase"
-            title="Designed for Indian PG brands that sell out faster"
-            copy="Real PGHandle deployments across Bengaluru, Hyderabad, and Pune that use immersive imagery, community perks, and automated ops to stay permanently waitlisted."
+            eyebrow="Success Stories"
+            title="Real PG owners getting real results with PGHandle"
+            copy="Join hundreds of PG owners across India who've transformed their operations with PGHandle. See how they save time, reduce hassles, and improve tenant satisfaction."
           />
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {pgShowcase.map((space) => (
@@ -449,15 +467,15 @@ function App() {
         </div>
       </section>
 
-      <section id="automation" className="bg-white py-20">
+      <section id="services" className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionTitle
-            eyebrow="Automation engine"
-            title="The intelligence loop that watches your entire portfolio"
-            copy="PGHandle ingests every booking, guest touchpoint, and IoT signal to predict what your team should do next—then does it for you."
+            eyebrow="Core Services"
+            title="Everything a modern PG needs, built right in"
+            copy="No more juggling multiple tools. PGHandle gives you all the essential services you need to run a professional PG operation."
           />
           <div className="grid gap-6 md:grid-cols-3">
-            {timeline.map((item) => (
+            {services.map((item) => (
               <SurfaceCard key={item.title}>
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-secondary">
                   {item.title}
@@ -472,9 +490,9 @@ function App() {
       <section className="bg-whiten py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionTitle
-            eyebrow="Proof"
-            title="Hospitality teams choose PGHandle for bold growth"
-            copy="Whether you manage 10 lofts or 500 villas, PGHandle removes the noise so you can obsess over the guest experience again."
+            eyebrow="Testimonials"
+            title="Loved by PG owners across India"
+            copy="Don't just take our word for it. Here's what PG owners say about how PGHandle transformed their business."
           />
           <div className="grid gap-6 md:grid-cols-2">
             {testimonials.map((testimonial) => (
@@ -495,11 +513,12 @@ function App() {
         <div className="mx-auto max-w-6xl px-6">
           <SectionTitle
             eyebrow="Pricing"
-            title="Straightforward INR plans that grow with you"
-            copy="Every plan includes white-glove migration, 24/7 concierge support, and access to the PGHandle partner marketplace."
+            title="Affordable plans for PGs of every size"
+            copy="Choose the plan that fits your PG. All plans include onboarding support, regular updates, and access to our support team."
           />
           <p className="mb-8 text-center text-sm text-bodydark">
-            All pricing shown in INR. GST billed separately.
+            All prices in INR. 18% GST additional. Save 2 months with annual
+            billing.
           </p>
           <div className="grid gap-6 md:grid-cols-3">
             {pricingPlans.map((plan) => (
@@ -543,8 +562,8 @@ function App() {
         <div className="mx-auto max-w-5xl px-6">
           <SectionTitle
             eyebrow="FAQs"
-            title="Everything else teams ask before switching"
-            copy="If you need something bespoke, our product specialists will shape the plan that fits your portfolio."
+            title="Common questions from PG owners"
+            copy="Have more questions? Our support team is always happy to help. Contact us anytime."
           />
           <div className="space-y-4">
             {faqs.map((faq) => (
@@ -563,35 +582,34 @@ function App() {
 
       <section className="bg-primary py-16 text-center text-white">
         <h3 className="font-display text-4xl">
-          Ready to route guests straight into PGHandle?
+          Ready to transform your PG management?
         </h3>
         <p className="mx-auto mt-4 max-w-2xl text-base text-white/80">
-          Launch the marketing CTA below and send prospects right into the
-          PGHandle application flow you configure—no custom code required.
+          Join 150+ PG owners who've ditched notebooks and spreadsheets. Start
+          your free trial today and see the difference in 2 days.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href={APP_URL}
             className="rounded-full bg-white px-7 py-3 font-semibold text-primary transition hover:-translate-y-0.5">
-            Route to PGHandle
+            Start Free Trial
           </a>
           <a
-            href="mailto:hello@pghandle.com"
+            href={DEMO_URL}
+            target="_blank"
+            rel="noreferrer"
             className="rounded-full border border-white/60 px-7 py-3 font-semibold text-white transition hover:bg-white/10">
-            Email our team
+            Schedule a Demo
           </a>
         </div>
       </section>
 
       <footer className="border-t border-stroke bg-white py-10 text-center text-sm text-body">
         <p>
-          © {new Date().getFullYear()} PGHandle. Purpose-built for modern stay
-          brands.
+          © {new Date().getFullYear()} PGHandle. India's most loved PG
+          management software.
         </p>
-        <p className="mt-2">
-          Built with ❤️ using the same React + Tailwind stack that powers the
-          PGHandle application.
-        </p>
+        <p className="mt-2">Made with ❤️ in India for Indian PG owners.</p>
       </footer>
     </div>
   );
