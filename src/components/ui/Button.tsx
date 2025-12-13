@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { ArrowRight } from 'lucide-react';
@@ -69,7 +69,7 @@ export function Button({
       className={classes}
       whileHover={variant !== 'outline' && variant !== 'ghost' ? { y: -2 } : {}}
       whileTap={{ scale: 0.98 }}
-      {...props}
+      {...(props as any)}
     >
       {content}
     </motion.button>
