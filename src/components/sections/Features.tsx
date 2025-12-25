@@ -1,4 +1,4 @@
-import { BedDouble, ReceiptIndianRupee, Utensils, Users, ShieldCheck, Wrench } from 'lucide-react';
+import { BedDouble, ReceiptIndianRupee, UserCog, Users, ShieldCheck, Wrench } from 'lucide-react';
 import { SectionTitle } from '../ui/SectionTitle';
 import { Card } from '../ui/Card';
 
@@ -14,9 +14,9 @@ const features = [
     copy: "Generate rent invoices and send WhatsApp reminders automatically. Collect payments faster with zero effort."
   },
   {
-    icon: Utensils,
-    title: "Cut Food Wastage",
-    copy: "Track daily meal consumption accurately. Save thousands every month by planning your kitchen inventory better."
+    icon: UserCog,
+    title: "Role-Based Staff Access",
+    copy: "Delegate securely. Add staff members, assign specific roles, and control access permissions to specific PGs."
   },
   {
     icon: Users,

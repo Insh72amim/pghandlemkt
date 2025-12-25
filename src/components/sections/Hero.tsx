@@ -29,7 +29,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            PG Management Made Simple
+            Easily handle your PG with PgHandle
           </div>
           
           <h1 className="font-display text-4xl font-bold leading-tight text-black sm:text-5xl md:text-6xl mb-6">
