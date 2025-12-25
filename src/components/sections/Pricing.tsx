@@ -5,27 +5,48 @@ import { Card } from '../ui/Card';
 
 const plans = [
   {
-    name: "Starter",
-    price: "3,600",
-    period: "/ year",
-    desc: "Perfect for single PG facilities.",
-    features: ["Up to 50 beds", "Automated Billing", "Basic Reports", "Email Support"],
+    name: "Free Forever",
+    price: "0",
+    period: "",
+    desc: "Perfect for getting started.",
+    features: [
+      "Manage 1 PG",
+      "Up to 10 Beds",
+      "Guest Portal Access",
+      "Automated Billing",
+      "Email Notifications",
+      "Basic Reports"
+    ],
     popular: false
   },
   {
-    name: "Professional",
-    price: "8,999",
-    period: "/ year",
-    desc: "For growing PG chains.",
-    features: ["Up to 150 beds", "Food Management", "Tenant Portal", "WhatsApp Reminders", "Priority Support"],
+    name: "Basic",
+    price: "199",
+    period: "/ month per PG",
+    desc: "For growing PGs needing staff.",
+    features: [
+      "Up to 60 Beds",
+      "2 Staff Accounts",
+      "Role-Based Access Control",
+      "Everything in Free",
+      "Advanced Reports",
+      "Document Management"
+    ],
     popular: true
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    desc: "For large scale operations.",
-    features: ["Unlimited beds", "Multi-property Dashboard", "Custom Integrations", "Dedicated Manager", "24/7 Support"],
+    name: "Pro",
+    price: "399",
+    period: "/ month per PG",
+    desc: "For established businesses.",
+    features: [
+      "Up to 200 Beds",
+      "10 Staff Accounts",
+      "Priority Support",
+      "Everything in Basic",
+      "Data Export",
+      "Dedicated Manager"
+    ],
     popular: false
   }
 ];
@@ -37,7 +58,7 @@ export function Pricing() {
         <SectionTitle
           eyebrow="Pricing"
           title="Simple, transparent pricing"
-          copy="No hidden fees. Pay annually and save 2 months."
+          copy="Start for free. Upgrade as you grow. No hidden fees."
           className="mb-16"
         />
 
@@ -78,11 +99,19 @@ export function Pricing() {
                 className="w-full"
                 href="https://app.pghandle.in/signup"
               >
-                Choose {plan.name}
+                {plan.price === "0" ? "Start for Free" : `Choose ${plan.name}`}
               </Button>
             </Card>
           ))}
         </div>
+
+        <div className="mt-12 text-center max-w-2xl mx-auto p-4 bg-blue-50 rounded-lg border border-blue-100">
+             <p className="text-sm font-medium text-blue-800">
+                📢 <strong>Note on Notifications:</strong> Email notifications are completely FREE on all plans. 
+                WhatsApp & SMS notifications are available as pay-as-you-go add-ons via Credit Packs (approx ₹0.49 - ₹0.99 per message).
+             </p>
+        </div>
+
       </div>
     </section>
   );
