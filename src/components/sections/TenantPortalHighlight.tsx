@@ -86,7 +86,7 @@ export function TenantPortalHighlight() {
             ))}
           </ul>
 
-          <Button variant="secondary" size="lg">Explore Tenant Portal</Button>
+          <Button variant="secondary" size="lg" href="https://guest.pghandle.in/signin">Explore Tenant Portal</Button>
         </motion.div>
 
       </div>

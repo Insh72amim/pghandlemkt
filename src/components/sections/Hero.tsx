@@ -38,12 +38,11 @@ export function Hero() {
           </h1>
           
           <p className="text-lg text-body text-balance mb-8 max-w-lg">
-            Automate bookings, billing, food management, and tenant communication from one beautiful dashboard. Join 150+ PG owners who've gone digital.
+            <strong>Your PG on Autopilot.</strong> The easiest way to run your PG. Automate billing, rent reminders, and happy tenants—all in one simple app.
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" icon href="https://app.pghandle.in/signup">Start Free Trial</Button>
-            <Button size="lg" variant="outline" href="https://cal.com/pghandle/demo">Book a Demo</Button>
+            <Button size="lg" icon href="https://app.pghandle.in/auth/signup">Start Free Trial</Button>
           </div>
 
           <div className="mt-10 flex items-center gap-8 text-sm font-medium text-body">

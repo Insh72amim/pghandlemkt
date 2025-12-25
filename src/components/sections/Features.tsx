@@ -5,33 +5,33 @@ import { Card } from '../ui/Card';
 const features = [
   {
     icon: BedDouble,
-    title: "Bed & Room Management",
-    copy: "Real-time tracking of beds availability. Prevent booking conflicts and manage check-ins seamlessly."
+    title: "Instant Room & Bed Tracking",
+    copy: "Never double-book again. See exactly which beds are free, occupied, or under maintenance in real-time."
   },
   {
     icon: ReceiptIndianRupee,
-    title: "Smart Billing & GST",
-    copy: "Auto-generate rent invoices, track payments, and stay GST compliant without the manual headaches."
+    title: "Auto-Pilot Billing",
+    copy: "Generate rent invoices and send WhatsApp reminders automatically. Collect payments faster with zero effort."
   },
   {
     icon: Utensils,
-    title: "Food Management",
-    copy: "Track daily meal counts and wastage. Plan your inventory better and reduce food costs instantly."
+    title: "Cut Food Wastage",
+    copy: "Track daily meal consumption accurately. Save thousands every month by planning your kitchen inventory better."
   },
   {
     icon: Users,
-    title: "Tenant Portal",
-    copy: "Empower tenants to view bills, pay rents, and raise tickets via their own self-service login."
+    title: "Tenant Self-Service App",
+    copy: "Give tenants their own app to pay rent, view receipts, and request support. Reduce your daily phone calls."
   },
   {
     icon: ShieldCheck,
-    title: "Digital KYC",
-    copy: "Secure Aadhaar-based verification for every tenant. Keep your property safe and compliant."
+    title: "1-Click Digital KYC",
+    copy: "Verify tenants instantly with secure Aadhaar integration. Enhance security without handling piles of paper."
   },
   {
     icon: Wrench,
-    title: "Issue Tracking",
-    copy: "Log infrastructure issues and track them to closure. Keep your tenants happy with prompt service."
+    title: "Complaint Resolution Tracker",
+    copy: "Don't let broken taps break trust. Log, assign, and track maintenance issues until they're fixed."
   }
 ];
 

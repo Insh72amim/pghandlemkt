@@ -10,8 +10,7 @@ export function CTA() {
           Join 150+ PG owners who've ditched notebooks for good. Start your free trial today.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button variant="secondary" size="lg" href="https://app.pghandle.in/signup">Start Free Trial</Button>
-          <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-primary hover:border-white" size="lg" href="https://cal.com/pghandle/demo">Schedule Demo</Button>
+          <Button variant="secondary" size="lg" href="https://app.pghandle.in/auth/signup">Start Free Trial</Button>
         </div>
       </div>
     </section>
