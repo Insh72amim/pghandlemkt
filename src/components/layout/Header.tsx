@@ -52,7 +52,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-            <a href="https://app.pghandle.in/auth/login" className="text-sm font-semibold hover:text-primary">Log in</a>
+            <a href="https://app.pghandle.in/auth/signin" className="text-sm font-semibold hover:text-primary">Log in</a>
             <Button href="https://app.pghandle.in/auth/signup" size="sm">Start Free Trial</Button>
         </div>
 
@@ -86,7 +86,7 @@ export function Header() {
                 </a>
               ))}
               <div className="flex flex-col gap-3 mt-4">
-                <Button href="https://app.pghandle.in/auth/login" variant="outline" className="w-full">Log in</Button>
+                <Button href="https://app.pghandle.in/auth/signin" variant="outline" className="w-full">Log in</Button>
                 <Button href="https://app.pghandle.in/auth/signup" className="w-full">Start Free Trial</Button>
               </div>
             </nav>
