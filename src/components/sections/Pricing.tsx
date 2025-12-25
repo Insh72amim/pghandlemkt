@@ -97,7 +97,7 @@ export function Pricing() {
               <Button 
                 variant={plan.popular ? 'primary' : 'outline'} 
                 className="w-full"
-                href="https://app.pghandle.in/signup"
+                href="https://app.pghandle.in/auth/signup"
               >
                 {plan.price === "0" ? "Start for Free" : `Choose ${plan.name}`}
               </Button>
