@@ -7,7 +7,8 @@ const pgShowcase = [
     image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80",
     copy: "Moved from Excel sheets to PGHandle. Now managing bookings and billing for 3 properties from a single dashboard.",
     metric: "98% occupancy",
-    tag: "Multi-property"
+    tag: "Multi-property",
+    alt: "Green Valley PG management dashboard on laptop screen"
   },
   {
     title: "Student Hub",
@@ -15,7 +16,8 @@ const pgShowcase = [
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
     copy: "Automated rent reminders reduced payment delays by 80%. GST compliance now takes minutes.",
     metric: "₹4.2L revenue",
-    tag: "Student Housing"
+    tag: "Student Housing",
+    alt: "Student Hub hostel room interior causing higher occupancy"
   },
   {
     title: "SafeStay Women's PG",
@@ -23,7 +25,8 @@ const pgShowcase = [
     image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
     copy: "Digital KYC verification improved safety. Parents receive monthly updates automatically, building trust.",
     metric: "4.9★ rating",
-    tag: "Women-first"
+    tag: "Women-first",
+    alt: "SafeStay Women's PG comfortable living space"
   },
 ];
 
@@ -44,7 +47,7 @@ export function Showcase() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
               <img 
                 src={pg.image} 
-                alt={pg.title} 
+                alt={pg.alt} 
                 className="h-[400px] w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 z-20 text-white">

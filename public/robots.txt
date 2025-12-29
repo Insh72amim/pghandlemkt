@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pghandle.in/sitemap.xml
