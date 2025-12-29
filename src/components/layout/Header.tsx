@@ -60,6 +60,7 @@ export function Header() {
         <button 
           className="md:hidden text-black"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X /> : <Menu />}
         </button>

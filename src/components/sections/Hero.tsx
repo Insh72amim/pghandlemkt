@@ -33,8 +33,8 @@ export function Hero() {
           </div>
           
           <h1 className="font-display text-4xl font-bold leading-tight text-black sm:text-5xl md:text-6xl mb-6">
-            Ditch the notebooks. <br />
-            <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Manage like a Pro.</span>
+            India's #1 <br />
+            <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">PG Management Software</span>
           </h1>
           
           <p className="text-lg text-body text-balance mb-8 max-w-lg">

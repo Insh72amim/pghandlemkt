@@ -41,7 +41,7 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-6">
         <SectionTitle
           eyebrow="Features"
-          title="Everything you need to run a modern PG"
+          title="Everything you need in a PG App"
           copy="We've packed PGHandle with tools that handle the boring stuff, so you can focus on growing your business."
           className="mb-16"
         />

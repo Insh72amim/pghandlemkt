@@ -8,6 +8,7 @@ import { Showcase } from "./components/sections/Showcase";
 import { Testimonials } from "./components/sections/Testimonials";
 import { Pricing } from "./components/sections/Pricing";
 import { FAQ } from "./components/sections/FAQ";
+import { SEOContent } from "./components/sections/SEOContent";
 import { CTA } from "./components/sections/CTA";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Showcase />
         <Testimonials />
         <Pricing />
+        <SEOContent />
         <FAQ />
         <CTA />
       </main>
