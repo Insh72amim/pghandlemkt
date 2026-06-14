@@ -61,7 +61,7 @@ export function TenantPortalHighlight() {
           className="order-1 lg:order-2"
         >
           <div className="inline-flex items-center gap-2 rounded-full bg-purple-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-purple-600 mb-6">
-            <Smartphone size={14} /> New Feature
+            <Smartphone size={14} aria-hidden="true" /> New Feature
           </div>
           <h2 className="font-display text-4xl font-bold text-black mb-6">
             Give tenants the <span className="text-purple-600">Freedom</span> they want.
@@ -79,7 +79,7 @@ export function TenantPortalHighlight() {
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-3 text-black font-medium">
                 <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0">
-                  <Check size={14} strokeWidth={3} />
+                  <Check size={14} strokeWidth={3} aria-hidden="true" />
                 </div>
                 {item}
               </li>

@@ -50,7 +50,7 @@ export function Features() {
           {features.map((f, i) => (
             <Card key={i} delay={i * 0.1} className="hover:border-primary/30 group">
               <div className="h-12 w-12 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <f.icon size={24} />
+                <f.icon size={24} aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-black mb-3">{f.title}</h3>
               <p className="text-body leading-relaxed">{f.copy}</p>

@@ -32,14 +32,14 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3" aria-label="PGHandle Homepage">
           <img src={LogoMark} alt="PGHandle" className="h-8 w-8 lg:hidden" />
           <img src={LogoFull} alt="PGHandle" className="hidden h-10 w-auto lg:block" />
           <span className="font-display text-xl font-bold lg:hidden">PGHandle</span>
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex gap-8" aria-label="Main Navigation">
           {navLinks.map((link) => (
             <a 
               key={link.label} 
@@ -75,7 +75,7 @@ export function Header() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-white border-b border-stroke overflow-hidden"
           >
-            <nav className="flex flex-col p-6 gap-4">
+            <nav className="flex flex-col p-6 gap-4" aria-label="Mobile Navigation">
               {navLinks.map((link) => (
                 <a 
                   key={link.label} 
