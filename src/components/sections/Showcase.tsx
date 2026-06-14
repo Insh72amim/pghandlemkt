@@ -60,8 +60,8 @@ export function Showcase() {
                 </span>
                 <h3 className="text-2xl font-bold">{pg.title}</h3>
                 <p className="text-white/80 text-sm mb-3">{pg.location}</p>
-                <div className="h-0 overflow-hidden group-hover:h-auto transition-all duration-300 opacity-0 group-hover:opacity-100">
-                   <p className="text-sm text-white/90 mb-3">{pg.copy}</p>
+                <div className="mt-2">
+                   <p className="text-sm text-white/90 mb-2">{pg.copy}</p>
                    <p className="text-primary font-bold">{pg.metric}</p>
                 </div>
               </div>

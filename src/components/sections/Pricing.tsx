@@ -88,7 +88,7 @@ export function Pricing() {
               <ul className="space-y-4 mb-8 flex-1">
                 {plan.features.map((f, idx) => (
                    <li key={idx} className="flex items-start gap-3 text-sm font-medium text-body">
-                     <Check className="h-5 w-5 text-primary shrink-0" />
+                     <Check className="h-5 w-5 text-primary shrink-0" aria-hidden="true" />
                      {f}
                    </li>
                 ))}

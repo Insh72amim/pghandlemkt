@@ -47,11 +47,11 @@ export function Hero() {
 
           <div className="mt-10 flex items-center gap-8 text-sm font-medium text-body">
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-success" />
+              <CheckCircle className="h-5 w-5 text-success" aria-hidden="true" />
               <span>Free 14-day trial</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-success" />
+              <CheckCircle className="h-5 w-5 text-success" aria-hidden="true" />
               <span>No credit card required</span>
             </div>
           </div>
@@ -64,7 +64,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative"
         >
-          <div className="relative z-10 bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl p-6 shadow-2xl">
+          <div className="relative z-10 bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl p-6 shadow-2xl" aria-hidden="true" role="presentation">
             <div className="flex items-center justify-between mb-8">
                <div>
                  <p className="text-xs font-bold uppercase tracking-wider text-secondary">Dashboard Overview</p>
@@ -108,10 +108,12 @@ export function Hero() {
             animate={{ y: [0, -20, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="absolute -top-10 -right-10 bg-white p-4 rounded-xl shadow-xl z-20 border border-stroke hidden md:block"
+            aria-hidden="true"
+            role="presentation"
           >
             <div className="flex items-center gap-3">
                <div className="bg-green-100 p-2 rounded-full text-green-600">
-                 <CheckCircle size={20} />
+                 <CheckCircle size={20} aria-hidden="true" />
                </div>
                <div>
                  <p className="text-xs text-gray-500">Rent Collected</p>

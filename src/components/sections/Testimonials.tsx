@@ -38,15 +38,17 @@ export function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
-            <div key={i} className="bg-white/10 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative">
+            <blockquote key={i} className="bg-white/10 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative">
               <Quote className="absolute top-6 left-6 text-primary/40 h-10 w-10 rotate-180" aria-hidden="true" />
               <p className="text-lg leading-relaxed text-gray-200 mb-6 relative z-10 pt-8">"{t.quote}"</p>
-              <div>
-                <p className="font-bold text-white">{t.author}</p>
-                <p className="text-sm text-gray-400">{t.role}</p>
-                <p className="text-xs text-primary uppercase tracking-wider mt-1">{t.location}</p>
-              </div>
-            </div>
+              <footer>
+                <cite className="not-italic">
+                  <p className="font-bold text-white">{t.author}</p>
+                  <p className="text-sm text-gray-400">{t.role}</p>
+                  <p className="text-xs text-primary uppercase tracking-wider mt-1">{t.location}</p>
+                </cite>
+              </footer>
+            </blockquote>
           ))}
         </div>
       </div>

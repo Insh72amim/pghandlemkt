@@ -14,7 +14,7 @@ export function TenantPortalHighlight() {
           viewport={{ once: true }}
           className="relative order-2 lg:order-1"
         >
-          <div className="relative mx-auto w-[300px] h-[600px] bg-black rounded-[40px] border-[8px] border-black shadow-2xl overflow-hidden">
+          <div className="relative mx-auto w-[300px] h-[600px] bg-black rounded-[40px] border-[8px] border-black shadow-2xl overflow-hidden" aria-hidden="true" role="presentation">
              {/* Mock Mobile Screen */}
              <div className="h-full w-full bg-white text-left overflow-hidden">
                 <div className="bg-primary h-32 p-6 text-white pt-12">

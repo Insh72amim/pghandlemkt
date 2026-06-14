@@ -40,7 +40,7 @@ export function FAQ() {
               <summary className="flex items-center justify-between font-semibold text-lg text-black">
                 {faq.question}
                 <span className="ml-4 shrink-0 transition duration-300 group-open:-rotate-45">
-                  <Plus className="h-5 w-5" />
+                  <Plus className="h-5 w-5" aria-hidden="true" />
                 </span>
               </summary>
               <p className="mt-4 leading-relaxed text-body text-black/80 group-open:animate-fadeIn">

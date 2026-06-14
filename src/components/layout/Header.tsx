@@ -61,6 +61,7 @@ export function Header() {
           className="md:hidden text-black"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={mobileMenuOpen}
         >
           {mobileMenuOpen ? <X /> : <Menu />}
         </button>

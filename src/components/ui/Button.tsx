@@ -44,7 +44,7 @@ export function Button({
   const content = (
     <>
       {children}
-      {icon && <ArrowRight className="ml-2 h-4 w-4" />}
+      {icon && <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />}
     </>
   );
 
