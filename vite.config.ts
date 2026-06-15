@@ -17,7 +17,10 @@ export default defineConfig({
         '/compare', 
         '/compare/stanza-living',
         '/compare/zolostays',
-        '/compare/excel'
+        '/compare/excel',
+        '/solutions/rent-collection',
+        '/solutions/tenant-verification',
+        '/solutions/excel-alternative'
       ],
       renderer: new PuppeteerRenderer({
         inject: {},

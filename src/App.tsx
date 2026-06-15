@@ -6,6 +6,9 @@ import { BlogIndex } from "./pages/Blog/BlogIndex";
 import { BlogPost } from "./pages/Blog/BlogPost";
 import { CompareIndex } from "./pages/Compare/CompareIndex";
 import { CompareDetail } from "./pages/Compare/CompareDetail";
+import { RentCollection } from "./pages/Solutions/RentCollection";
+import { TenantVerification } from "./pages/Solutions/TenantVerification";
+import { ExcelAlternative } from "./pages/Solutions/ExcelAlternative";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/compare" element={<CompareIndex />} />
           <Route path="/compare/:competitor" element={<CompareDetail />} />
+          <Route path="/solutions/rent-collection" element={<RentCollection />} />
+          <Route path="/solutions/tenant-verification" element={<TenantVerification />} />
+          <Route path="/solutions/excel-alternative" element={<ExcelAlternative />} />
         </Routes>
       </main>
       <Footer />
