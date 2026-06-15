@@ -8,11 +8,21 @@ export default defineConfig({
   plugins: [
     react(),
     prerender({
-      routes: ['/'],
-      renderer: new PuppeteerRenderer(),
-      server: {
-        port: 5000
-      }
+      routes: [
+        '/', 
+        '/blog', 
+        '/blog/how-to-manage-pg-in-india',
+        '/blog/tenant-verification-aadhaar',
+        '/blog/automate-rent-collection',
+        '/compare', 
+        '/compare/stanza-living',
+        '/compare/zolostays',
+        '/compare/excel'
+      ],
+      renderer: new PuppeteerRenderer({
+        inject: {},
+        headless: true
+      }),
     })
   ],
 })

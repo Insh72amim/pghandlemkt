@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import LogoFull from '../../assets/logo.svg';
@@ -6,11 +7,11 @@ import LogoMark from '../../assets/logo-icon.svg';
 import { Button } from '../ui/Button';
 
 const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Services", href: "#services" },
-  { label: "Success Stories", href: "#gallery" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQs", href: "#faq" },
+  { label: "Features", href: "/#features" },
+  { label: "Services", href: "/#services" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Blog", href: "/blog" },
+  { label: "Compare", href: "/compare" },
 ];
 
 export function Header() {
@@ -41,13 +42,13 @@ export function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8" aria-label="Main Navigation">
           {navLinks.map((link) => (
-            <a 
+            <Link 
               key={link.label} 
-              href={link.href} 
+              to={link.href} 
               className="text-sm font-medium text-body hover:text-primary transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -78,14 +79,14 @@ export function Header() {
           >
             <nav className="flex flex-col p-6 gap-4" aria-label="Mobile Navigation">
               {navLinks.map((link) => (
-                <a 
+                <Link 
                   key={link.label} 
-                  href={link.href}
+                  to={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-base font-medium py-2 border-b border-stroke/50"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
               <div className="flex flex-col gap-3 mt-4">
                 <Button href="https://app.pghandle.in/auth/signin" variant="outline" className="w-full">Log in</Button>

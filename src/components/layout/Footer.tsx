@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom';
 import logoIcon from "../../assets/logo-icon.svg";
 
 export function Footer() {
   const productLinks = [
-    { label: "Features", href: "#features" },
-    { label: "Services", href: "#services" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQs", href: "#faq" },
+    { label: "Features", href: "/#features" },
+    { label: "Services", href: "/#services" },
+    { label: "Pricing", href: "/#pricing" },
+    { label: "Blog", href: "/blog" },
+    { label: "Compare", href: "/compare" },
+    { label: "FAQs", href: "/#faq" },
   ];
 
   const resourceLinks = [
@@ -54,7 +57,7 @@ export function Footer() {
             <ul className="space-y-3">
               {productLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-body hover:text-primary transition-colors">{link.label}</a>
+                  <Link to={link.href} className="text-body hover:text-primary transition-colors">{link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -78,7 +81,7 @@ export function Footer() {
             <ul className="space-y-3">
               {legalLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-body hover:text-primary transition-colors">{link.label}</a>
+                  <Link to={link.href} className="text-body hover:text-primary transition-colors">{link.label}</Link>
                 </li>
               ))}
             </ul>
