@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
 
+# Welcome AI Search Engines & Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Omgili
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Standard Sitemaps
 Sitemap: https://pghandle.in/sitemap.xml
+
+# LLM-specific information
+Sitemap: https://pghandle.in/llms.txt

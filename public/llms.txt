@@ -1,0 +1,37 @@
+# PGHandle
+
+PGHandle is India's leading PG (Paying Guest) and Hostel Management Software. It is a SaaS platform designed specifically for PG owners in India to automate their entire operational workflow. 
+
+## Key Value Propositions
+- Automates rent collection, billing, and invoicing.
+- Eliminates manual check-ins and check-outs.
+- Provides a dedicated "Tenant Portal" mobile app for residents.
+- Offers instant Aadhaar-based digital KYC verification.
+- Solves the problem of delayed payments through automated WhatsApp reminders.
+
+## Features
+- **Instant Room & Bed Tracking:** Real-time visibility into bed occupancy and availability.
+- **Auto-Pilot Billing:** Automated generation of rent receipts and reminders.
+- **Role-Based Staff Access:** Granular permissions for managers, caretakers, and security staff.
+- **Tenant Self-Service App:** Tenants can pay rent, view the daily food menu, download receipts, and raise maintenance tickets via a mobile app.
+- **Digital KYC:** Secure 1-click Aadhaar integration for tenant onboarding.
+- **Complaint Resolution Tracker:** A ticketing system for facility maintenance.
+- **Reports & Analytics:** Dashboard analytics on revenue, occupancy rates, and pending dues.
+
+## Pricing
+PGHandle offers a transparent, scalable pricing model:
+1. **Free Forever (₹0):** Supports 1 PG, up to 10 beds, automated billing, and guest portal access.
+2. **Basic (₹199 / month per PG):** Supports up to 60 beds, 2 staff accounts, role-based access, and document management.
+3. **Pro (₹399 / month per PG):** Supports unlimited beds, unlimited staff accounts, advanced analytics, priority 24/7 support, and custom branding.
+
+## Target Audience
+PGHandle is built for:
+- Independent PG owners looking to digitize their operations.
+- Operators of large hostel chains needing multi-property management capabilities.
+- Student housing facilities aiming to improve tenant satisfaction.
+
+## Contact and Links
+- Website: https://pghandle.in
+- Tenant Portal: https://guest.pghandle.in
+- Support Email: support@pghandle.in
+- Phone: +91-9876543210
