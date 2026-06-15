@@ -28,7 +28,7 @@ export function Footer() {
           {/* Brand Column */}
           <div>
             <a href="/" className="flex items-center gap-2 mb-4" aria-label="PGHandle Homepage">
-              <img src={logoIcon} alt="PGHandle" className="h-8 w-8" />
+              <img src={logoIcon} alt="PGHandle" width="32" height="32" loading="lazy" className="h-8 w-8" />
               <span className="text-lg font-bold text-black">PGHandle</span>
             </a>
             <p className="text-body leading-relaxed">

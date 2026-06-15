@@ -9,7 +9,7 @@ interface CardProps {
 
 export function Card({ children, className = '', delay = 0 }: CardProps) {
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -18,6 +18,6 @@ export function Card({ children, className = '', delay = 0 }: CardProps) {
       className={`rounded-2xl border border-stroke bg-white p-6 shadow-sm transition-shadow hover:shadow-xl hover:shadow-primary/5 ${className}`}
     >
       {children}
-    </motion.div>
+    </motion.article>
   );
 }

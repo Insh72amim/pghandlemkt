@@ -33,8 +33,8 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="/" className="flex items-center gap-3" aria-label="PGHandle Homepage">
-          <img src={LogoMark} alt="PGHandle" className="h-8 w-8 lg:hidden" />
-          <img src={LogoFull} alt="PGHandle" className="hidden h-10 w-auto lg:block" />
+          <img src={LogoMark} alt="PGHandle" width="32" height="32" className="h-8 w-8 lg:hidden" />
+          <img src={LogoFull} alt="PGHandle" width="160" height="40" className="hidden h-10 w-auto lg:block" />
           <span className="font-display text-xl font-bold lg:hidden">PGHandle</span>
         </a>
 
